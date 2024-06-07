@@ -1,11 +1,15 @@
 import Header from "./layouts/Header/Header"
+import ToDoWrapper from "./layouts/ToDoWrapper/ToDoWrapper"
 
 function App() {
 
   return (
-    <main className=" w-screen h-screen bg-[#111011]">
+    <div className=" w-screen h-screen bg-[#111011]">
       <Header/>
-    </main>
+      <div className=" flex items-center justify-center">
+        <ToDoWrapper/>
+      </div>
+    </div>
   )
 }
 
