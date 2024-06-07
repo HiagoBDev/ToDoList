@@ -1,10 +1,11 @@
+import Header from "./layouts/Header/Header"
 
 function App() {
 
   return (
-    <>
-      <h1>To do list</h1>
-    </>
+    <main className=" w-screen h-screen bg-[#111011]">
+      <Header/>
+    </main>
   )
 }
 
