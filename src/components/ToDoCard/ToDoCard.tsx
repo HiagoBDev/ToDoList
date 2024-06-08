@@ -13,7 +13,7 @@ export default function ToDoCard({ title, date, description }: ToDoCardProps) {
       <div className='flex  items-start'>
         <div className='flex flex-col ml-2'>
           <div className='flex gap-4 items-center'>
-            <p className='text-xl font-semibold text-white'>{title}</p>
+            <p className=' text-lg font-semibold text-white'>{title}</p>
             <p className='text-xs text-[#ffa255] font-medium'>{date}</p>
           </div>
           <div className='mt-2'>
