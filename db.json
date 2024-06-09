@@ -1,28 +1,5 @@
 {
   "ToDos": [
-    {
-      "id": 1,
-      "title": "Limpar casa",
-      "date": "07/19/2024",
-      "description": "banheiro, cozinha, quarto"
-    },
-    {
-      "id": 2,
-      "title": "Fazer comida",
-      "date": "07/19/2024",
-      "description": "Preparar almoço e jantar"
-    },
-    {
-      "id": 3,
-      "title": "Estudar React",
-      "date": "07/19/2024",
-      "description": "Aprender hooks e contexto"
-    },
-    {
-      "id": 4,
-      "title": "Estudar vim",
-      "date": "07/19/2024",
-      "description": "Aprender vim"
-    }
+    
   ]
 }

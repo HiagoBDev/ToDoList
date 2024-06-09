@@ -7,9 +7,9 @@ export interface IToDo {
   description: string;
 }
 
-export class ToDoService {
-  static async fetchToDos() {
-    const { data } = await httpClient.get("/ToDos");
-    return data;
+export class ToDoListService {
+  static async getToDos() {
+    const response = await httpClient.get("/ToDos");
+    return response.data;
   }
 }
