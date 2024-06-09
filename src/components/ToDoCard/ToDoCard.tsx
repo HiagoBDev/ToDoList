@@ -1,5 +1,6 @@
 import close from '../../assets/close.svg';
 import check from '../../assets/check.svg';
+import { formatDate } from '../../utils/dateUtils';
 
 interface ToDoCardProps {
   title: string;
@@ -13,8 +14,8 @@ export default function ToDoCard({ title, date, description }: ToDoCardProps) {
       <div className='flex  items-start'>
         <div className='flex flex-col ml-2'>
           <div className='flex gap-4 items-center'>
-            <p className=' text-lg font-semibold text-white'>{title}</p>
-            <p className='text-xs text-[#ffa255] font-medium'>{date}</p>
+            <p className=' text-base font-semibold text-white'>{title}</p>
+            <p className='text-xs text-[#ffa255] font-medium'>{formatDate(date)}</p>
           </div>
           <div className='mt-2'>
             <p className='text-sm break-words max-w-[180px] text-black'>{description}</p>

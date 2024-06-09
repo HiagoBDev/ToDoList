@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ToDoService, IToDo } from '../../service/ToDoService';
+import { ToDoListService, IToDo } from '../../service/ToDoListService';
 
 export const useToDo = () => {
   const [toDos, setToDos] = useState<IToDo[]>([]);
@@ -7,7 +7,7 @@ export const useToDo = () => {
   useEffect(() => {
     const fetchToDos = async () => {
       try {
-        const data = await ToDoService.fetchToDos();
+        const data = await ToDoListService.getToDos();
         setToDos(data);
       } catch (error) {
         console.error('Error matching data from To-Dos:', error);
