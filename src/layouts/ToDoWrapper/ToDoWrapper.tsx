@@ -10,7 +10,7 @@ export default function ToDoWrapper() {
   const toDos = useToDo()
 
   return (
-    <main className=' bg-[#202225] w-[80%] flex flex-col gap-10 rounded-xl min-h-60 mt-10 border border-[#2f9e44] shadow-md shadow-[#458550]'>
+    <main className=' bg-[#202225] w-[80%] max-w-72 flex flex-col gap-10 rounded-xl min-h-60 mt-10 border border-[#2f9e44] shadow-md shadow-[#458550] mb-10'>
       <div className=' flex justify-end items-center'>
         <button className=' pt-3 pr-3 flex items-center gap-2' onClick={ () => setOpenModal(true) }> 
           <p className=" text-white text-lg">Add</p>
@@ -28,7 +28,7 @@ export default function ToDoWrapper() {
         ))
         }
       </div>
-      <Modal isOpen={openModal}>
+      <Modal onClose={ () => setOpenModal(false)} isOpen={openModal}>
         <ToDoForm/>
       </Modal>
     </main>
