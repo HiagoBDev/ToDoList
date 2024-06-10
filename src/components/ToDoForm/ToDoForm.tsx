@@ -8,7 +8,7 @@ export default function ToDoForm() {
     <form
       action=""
       onSubmit={handleSubmit}
-      className=" flex flex-col gap-3 pb-4"
+      className=" flex flex-col gap-5 pb-7 pl-2"
     >
       <div>
         <ToDoInputForm
@@ -33,7 +33,10 @@ export default function ToDoForm() {
           placeholder="enter your description"
         />
       </div>
-      <button type="submit" className="w-[95%] text-xs text-white focus:outline-none py-[5.5px] px-2 border border-emerald-500 rounded-lg bg-emerald-500 hover:opacity-90 focus:opacity-85 ">
+      <button
+        type="submit"
+        className="w-[90%] text-xs lg:text-xl text-white focus:outline-none py-[5.5px] px-2 border border-emerald-500 rounded-lg bg-emerald-500 hover:opacity-90 focus:opacity-100 "
+      >
         Create
       </button>
     </form>
