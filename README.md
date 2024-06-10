@@ -1,30 +1,52 @@
-# React + TypeScript + Vite
+<h1>To Do List</h1> 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple To Do List application developed to practice programming logic and commonly used architectural patterns in the workplace. The application allows users to add, mark as completed, and remove tasks, offering an intuitive and functional interface.
 
-Currently, two official plugins are available:
+# Key Features
+- Task Addition: Allows users to add new tasks with a title, date, and description.
+- Mark as Completed: Allows users to mark tasks as completed, applying different styling.
+- Task Removal: Allows users to remove unwanted or completed tasks.
+- Dynamic Styling: Uses conditional styling to highlight completed tasks, enhancing the user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Project Goals
+- Practice Programming Logic: Exercise the implementation of basic functionalities and state manipulation.
+- Apply Design Patterns: Utilize architectural patterns and best practices in application development.
+- Develop Intuitive Interface: Create a user-friendly and responsive interface to facilitate user interaction with the application.
 
-## Expanding the ESLint configuration
+# Technologies Used
+- <strong>React</strong>: JavaScript library for building user interfaces.
+- <strong>Tailwind CSS</strong>: CSS framework for quick and customizable styling.
+- <strong>TypeScript</strong>: JavaScript superset that adds static typing to the code.
+- <strong>json-server</strong>: Fake REST API for development and prototyping.
+- <strong>axios</strong>: Promise-based HTTP client for making API requests.
+- <strong>Vite</strong>: Next-generation front-end tooling for fast and optimized builds.
+- <strong>react-hook-form</strong>: Performant, flexible, and extensible form library for React.
+- <strong>zod</strong>: TypeScript-first schema declaration and validation library.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Project Setup
 
-- Configure the top-level `parserOptions` property like this:
+```bash
+// Open the command prompt or bash on your desktop and follow these steps:
+git clone https://github.com/HiagoBDev/ToDoList/
+cd ./ToDoList/
+npm install
+code .
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+// To run the API, execute this command:
+npx json-server db.json
+
+// To run the app, execute this command:
+npm run dev
+
+// Hold the Control key and click the link that appears in the terminal.
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Author
+---
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/102269033?v=4" width="200px;" alt="Hiago Borgaço picture"/>
+ <br />
+
+Done by Hiago Borgaço 👋🏽 Feel free to reach out!
+
+[![Linkedin Badge](https://img.shields.io/badge/-Hiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/hiago-borga%C3%A7o/)](https://www.linkedin.com/in/hiago-borga%C3%A7o/)
+[![Gmail Badge](https://img.shields.io/badge/-hiagoborgaco1@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:hiagoborgaco1@gmail.com)](mailto:hiagoborgaco1@gmail.com)
